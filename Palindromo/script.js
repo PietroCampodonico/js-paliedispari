@@ -5,16 +5,16 @@ Creare una funzione per capire se la parola inserita è palindroma*/
 var inputUtente = prompt("Inserisci una parola e ti saprò dire se è un palindromo!");
 //validare 
 
-function isthispalindrome(word) {
+function isThisAPalindrome(word) {
 
     var match = true;
     
     for (var i = 0; i < word.length; i++) {
     
-            if (word[i] !== word[word.length -1 -i]) {
-                
-                match=false;
-            }
+        if (word[i] !== word[word.length -1 -i]) {
+            
+            match=false;
+        }
     }
 
     if (match) {
@@ -24,7 +24,7 @@ function isthispalindrome(word) {
     }
 }
 
-document.writeln(isthispalindrome(inputUtente))
+document.writeln(isThisAPalindrome(inputUtente))
 
 
 
